@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Servlet</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Formulario Servlet</h1>
+        
+        <!--name es el nombre de nuestro formulario.
+            action nos va a dirir a ese servlet en este caso su nombre es Servlet.
+            method es el metodo por el que pasaremos la informacion en este caso sera por el 
+                cuerpo osea por el metodo POST-->
+        <form name="form1" action="/ManejoParametros/Servlet" method="POST">
+            
+            <!--El valor que nosotros agreguemos en la caja usuario se guardara en variable
+                usuario-->
+            Usuario: <input type="text" name="usuario" />
+            
+            <br>
+            
+            <!--El valor del password lo recuperaremos mediante variable password-->
+            Password: <input type="password" name="password"/>
+            
+            <br>
+            
+            <!--Boton para que se envie el formulario-->
+            <input type="submit" value="Enviar">
+            
+            
+        </form>
+    </body>
+</html>
